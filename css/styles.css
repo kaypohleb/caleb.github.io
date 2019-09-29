@@ -1,0 +1,35 @@
+body{
+  height: 100vh;
+  margin:0;
+  color:#333D48;
+
+}
+div{
+  margin-top:0
+}
+h1{
+  font-size: 3em;
+  margin:0;
+  color: black;
+}
+.top-box{
+  height:200px;
+  width:200px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.redbox{
+  background-color:#333D48;
+  margin-left:270px;
+  border:solid 20px;
+}
+.bluebox{
+  background-color:#333D48;
+  margin-left:510px;
+  border:solid 10px;
+}
+.box{
+  height: 200px;
+  width: 200px;
+}

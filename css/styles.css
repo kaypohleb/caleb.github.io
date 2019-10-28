@@ -1,35 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=LatoWork+Sans&display=swap');
 body{
-  height: 100vh;
+  font-family: 'Lato', sans-serif;
   margin:0;
-  color:#333D48;
-
+  background-color:#333D48;
+  color:white;
 }
 div{
-  margin-top:0
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 h1{
   font-size: 3em;
   margin:0;
-  color: black;
+  color: white;
 }
-.top-box{
-  height:200px;
-  width:200px;
-  padding: 20px;
-  margin-top: 10px;
-  margin-left: 10px;
+.text-animation{
+  font-size: 1.5em;
 }
-.redbox{
-  background-color:#333D48;
-  margin-left:270px;
-  border:solid 20px;
+.next::before{
+    content: '';
+    font-size: 100%;
+    animation-name: textani;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
-.bluebox{
-  background-color:#333D48;
-  margin-left:510px;
-  border:solid 10px;
+.cursor::before{
+  content: '';
+  font-size: 100%;
+  animation-name: cursor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
-.box{
-  height: 200px;
-  width: 200px;
+
+@keyframes textani {
+  0% {opacity:1;content: "I'm a d"}
+  2% {opacity:1;content: "I'm a de"}
+  4% { opacity:1;content: "I'm a dev"}
+  6% {opacity:1;content: "I'm a deve"}
+  8% {opacity:1;content: "I'm a devel"}
+  10% {opacity:1;content: "I'm a develo"}
+  12% {opacity:1; content: "I'm a develop"}
+  14% {opacity:1; content: "I'm a develope"}
+  16% {opacity:1; content: "I'm a developer"}
+  20% {opacity:1; content: "I'm a developer"}
+  26% {opacity:1; content: "I'm an "}
+  28% {opacity:1; content: "I'm an a"}
+  30% {opacity:1; content: "I'm an ar"}
+  32% {opacity:1; content: "I'm an art"}
+  34% {opacity:1; content: "I'm an arti"}
+  36% {opacity:1; content: "I'm an artis"}
+  38% {opacity:1; content: "I'm an artist"}
+  42% {opacity:1; content: "I'm an artist"}
+  48% {opacity:1; content: "I'm a "}
+  50% {opacity:1; content:"I'm a p"}
+  51% {opacity:1; content:"I'm a pr"}
+  52% {opacity:1; content:"I'm a pro"}
+  53% {opacity:1; content:"I'm a prob"}
+  54% {opacity:1; content:"I'm a probl"}
+  55% {opacity:1; content:"I'm a proble"}
+  56% {opacity:1; content:"I'm a problem"}
+  57% {opacity:1; content:"I'm a problem "}
+  58% {opacity:1; content:"I'm a problem s"}
+  59% {opacity:1; content:"I'm a problem so"}
+  60% {opacity:1; content:"I'm a problem sol"}
+  61% {opacity:1; content:"I'm a problem solv"}
+  62% {opacity:1; content:"I'm a problem solve"}
+  63% {opacity:1; content:"I'm a problem solver"}
+  73% {opacity:1; content:"I'm a "}
+  100% {opacity:1; content:"I'm a "}
 }
+
+@keyframes cursor{
+  0%{opacity:1; content:"|"}
+  50%{opacity:0; content:"|"}
+} 

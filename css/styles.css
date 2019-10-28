@@ -5,16 +5,45 @@ body{
   background-color:#333D48;
   color:white;
 }
-div{
+.central-text{
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 h1{
   font-size: 3em;
   margin:0;
+  color: white;
+}
+.profile{
+  padding:10px;
+  height:50vh;
+  display: inline-block;
+}
+.button{  
+  border-radius: 5%;
+  border: 2px solid white; /* Green */
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 9px #999;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button:hover {
+  background-color: red; /* Green */
   color: white;
 }
 .text-animation{

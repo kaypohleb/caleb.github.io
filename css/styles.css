@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=LatoWork+Sans&display=swap');
 body{
-  font-family: 'Lato', sans-serif;
-  margin:0;
-  background-color:#333D48;
+  font-family: 'Lato', sans-serif; 
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color:white;
 }
+img {
+  
+  -webkit-filter: drop-shadow(10px 10px 5px #222);
+  filter: drop-shadow(10px 10px 5px #222);
+}
+.sub-title{
+  font-size: 1.2em;
+  margin:10px;
+  
+}
 .central-text{
-  margin: 0;
+  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,7 +26,7 @@ body{
 }
 h1{
   font-size: 3em;
-  margin:0;
+  margin:10px;
   color: white;
 }
 .profile{
@@ -26,7 +37,7 @@ h1{
 .button{
   margin: 10px;  
   border-radius: 5%;
-  border: 2px solid white; /* Green */
+  border: 2px solid white; 
   color: white;
   padding: 7px 15px;
   text-align: center;
@@ -34,21 +45,22 @@ h1{
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
-  box-shadow: 0 9px #444D59;
+  box-shadow: 0 9px #2C5364;
 }
 .button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #444D59;
+  background-color: #db3434;
+  box-shadow: 0 5px #2C5364;
   transform: translateY(4px);
 }
 .button:hover {
-  background-color: red; /* Green */
+  background-color: #db3434;
   color: white;
 }
 .text-animation{
   font-size: 1.5em;
+  margin:10px;
 }
 .next::before{
     content: '';

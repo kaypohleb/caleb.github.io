@@ -14,6 +14,87 @@ html,body{
     font-family: 'Lato', sans-serif;
 
 }
+svg{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto ;
+    perspective: 300px;
+    display: block;
+    margin:auto;
+}
+
+svg:hover #circlelaptop1 {
+    animation-duration: 1.2s;
+    animation-name: animateText;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg:hover #circlelaptop2 {
+    animation-duration: 3.5s;
+    animation-name: animateText;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg:hover #frontlights {
+    animation-duration: 1s;
+    animation-name: animateFrontLight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg:hover #backlights {
+    animation-duration: 3.5s;
+    animation-name: animateFrontLight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg:hover #light {
+    animation-duration: 1.6s;
+    animation-name: animateLight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg:hover #stars {
+    animation-duration: 5s;
+    animation-name: animateStar;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animateStar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes animateLight{
+    from{
+        transform: translateX(0) translateY(0);
+    }
+    to{
+        transform: translateX(10px) translateY(0);
+    }
+}
+
+@keyframes animateText{
+    from{
+        transform: translateX(0) translateY(0);
+    }
+    to{
+        transform: translateX(25px) translateY(0);
+    }
+}
+
+@keyframes animateFrontLight{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
 a{
     color:white;
     text-decoration: none;
@@ -31,7 +112,7 @@ a{
     background: #fff;
 }
 
-.wrapper{
+.bg-wrapper{
     height:100vh;
     overflow-x: hidden;
     overflow-y: auto ;
@@ -53,75 +134,6 @@ a{
     right: 0;
     bottom: 0;
     
-}
-.base{
-    background: url("bg/2.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 1;
-}
-.mountain{
-    background: url("bg/3.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 2;
-}
-.farbuilding{
-    background: url("bg/4.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 3;
-}
-
-.nearbuilding{
-    background: url("bg/5.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 4;
-
-}
-.drawer{
-    background: url("bg/6.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 5;
-}
-.yellowbuilding{
-    background: url("bg/7.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 6;
-}
-.floorlamp{
-    background: url("bg/8.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 7;
-}
-.desk{
-    background: url("bg/9.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 8;
-}
-.desklamp{
-    background: url("bg/10.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 9;
-}
-.seat{
-    background: url("bg/11.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 10;
-}
-.border{
-    background: url("bg/12.png") no-repeat center;
-    background-size: cover;
-    transform: translateZ(-1400px) scale(1);
-    z-index: 11;
-
 }
 .hero-text h2{
 position: absolute;

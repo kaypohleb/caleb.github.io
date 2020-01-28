@@ -7,3 +7,16 @@ function readMouseMove(e){
     div_container.style.left = diff_y.toString().concat('%')
 }
 document.onmousemove = readMouseMove;
+
+function showTerminal(){
+    if (document.getElementById('btn1').value == 'Show Terminal') {
+        document.getElementById('central-text').style.display = 'none';
+        document.getElementById('term').style.display = 'inline';
+        document.getElementById('btn1').value = 'Hide Terminal';
+        
+    }else if (document.getElementById('btn1').value == 'Hide Terminal') {
+        document.getElementById('central-text').style.display = 'inline';
+        document.getElementById('term').style.display = 'none';  
+        document.getElementById('btn1').value = 'Show Terminal';  
+    }
+}

@@ -1,10 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=LatoWork+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+.navitem{
+  display: inline;
+  
+}
+.navitemtext{
+  color:white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 12px;
+}
+.navitemtext:hover{
+  color:red
+}
+#navbar{
+  float: right;
+  list-style-type: none;
+  margin: 20px;
+  padding: 12px;
+}
 body{
   
   font-family: 'Lato', sans-serif; 
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #203A43;
   color:white;
 }
 img {
@@ -134,4 +151,8 @@ h1{
   background-color: rgba(241, 14, 241, 0.959); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+}
+
+#term{
+  display: inline;
 }

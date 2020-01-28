@@ -16,7 +16,5 @@
     "url": "https://github.com/kaypohleb/caleb.github.io/issues"
   },
   "homepage": "https://github.com/kaypohleb/caleb.github.io#readme",
-  "dependencies": {
-    "xterm": "^4.2.0-vscode1"
-  }
+  "dependencies": {}
 }

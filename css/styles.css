@@ -1,85 +1,437 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-.navitem{
-  display: inline;
-  
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
 }
-.navitemtext{
-  color:white;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 12px;
-}
-.navitemtext:hover{
-  color:red
-}
-#navbar{
-  float: right;
-  list-style-type: none;
-  margin: 20px;
-  padding: 12px;
-}
-body{
-  
-  font-family: 'Lato', sans-serif; 
-  background: #203A43;
-  color:white;
-}
-img {
-  
-  -webkit-filter: drop-shadow(10px 10px 5px #222);
-  filter: drop-shadow(10px 10px 5px #222);
-}
-.sub-title{
-  font-size: 1.2em;
-  margin:10px;
-  
-}
-#central-text{
-  
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-}
-h1{
-  font-size: 3em;
-  margin:10px;
-  color: white;
-}
-#profile{
-  padding:10px;
-  height:50vh;
-  position: relative;
 
+html,body{
+    width: 100%;
+    height:100%;
+    color:#fff;
+    background-color: #040404;
+    font-weight: 700;
+    font-family: 'product_sansbold', sans-serif;
+}
+.svg-container svg{
+    width: auto; height: 80vh;
+    display: block;
+    margin:auto;
+    opacity: 1;
+    overflow: hidden;
+    padding: auto;
+}
+.svg-container{
+    width:1400px;
+    position:relative;
+    left:50%;
+    margin-left:-700px;
+}
+svg #circlelaptop1 {
+    animation-duration: 1.2s;
+    animation-name: animateText;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #circlelaptop2 {
+    animation-duration: 3.5s;
+    animation-name: animateText;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #frontlights {
+    animation-duration: 1s;
+    animation-name: animateFrontLight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #backlights {
+    animation-duration: 3.5s;
+    animation-name: animateFrontLight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #light {
+    animation-duration: 1.6s;
+    animation-name: animateLight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #stars {
+    animation-duration: 5s;
+    animation-name: animateStar;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #signature{
+    animation-duration: 1s;
+    animation-name: animateSig;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animateSig{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(1deg);
+    }
+}
+
+
+@keyframes animateStar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes animateLight{
+    from{
+        transform: translateX(0) translateY(0);
+    }
+    to{
+        transform: translateX(10px) translateY(0);
+    }
+}
+
+@keyframes animateText{
+    from{
+        transform: translateX(0) translateY(0);
+    }
+    to{
+        transform: translateX(25px) translateY(0);
+    }
+}
+
+@keyframes animateFrontLight{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    
 }
 .button{
-  margin: 10px;  
-  border-radius: 5%;
-  border: 2px solid white; 
-  color: white;
-  padding: 7px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; 
-  transition-duration: 0.4s;
-  box-shadow: 0 9px #2C5364;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    color:rgb(116, 116, 116);
+    font-size: 1rem;
 }
-.button:active {
-  background-color: #db3434;
-  box-shadow: 0 5px #2C5364;
-  transform: translateY(4px);
+
+.button:hover{
+    color:#fff;
 }
-.button:hover {
-  background-color: #db3434;
-  color: white;
+
+.terminal .button{
+    border-radius: 30px;
+    padding: 15px;  
+    color:#fff;
+    background-color: rgb(206, 25, 25);
 }
+.terminal .button:hover{
+    background-color: #7e1313;
+}
+
+
+/* .parallax */
+.parallax__group{
+    position: absolute;
+    height:100%;
+    width:100%;
+
+}
+
+.parallax__layer{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+/* .hero-text */
+.hero-text h2{
+position: absolute;
+font-size: 1.25rem;
+left:2.5rem;
+right:2.5rem;
+top:2.5rem;
+font-family: 'Lato', sans-serif;
+opacity: 0.25;
+}
+.hero-text ul{
+    font-size: 0.75rem;
+    position: absolute;
+    right:2.5rem;
+    top: 2.5rem;
+    
+}
+.hero-text ul li{
+    margin-left: 2.5rem;
+    list-style-type: none;
+    float:left;
+    visibility: hidden;
+    
+}
+/*.name-container*/
+.name-container{
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+    width:65%;
+    height:15%;
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+
+}
+.name-container h1{
+    font-weight: 400;
+    position: absolute;
+    font-size: 15vw;
+    
+}
+.name-container h1:nth-of-type(1){
+    top:10%;
+}
+.name-container h1:nth-of-type(2){
+    left:25%;
+    bottom: 0;
+}
+.name-container h1:nth-of-type(3){
+    top:15%;
+    left:45%;
+}
+.name-container h1:nth-of-type(4){
+    top:0;
+    right:25%;
+}
+.name-container h1:nth-of-type(5){
+    right:0;
+    bottom:10%;
+}
+
+/* .sub-info */
+.sub-info{
+    position: relative;
+    left:45%;
+    width:20vw;
+    height: 10rem;
+    font-family: 'product_sansregular   ', sans-serif;
+    
+}
+
+.social-container{
+    position: absolute;
+    left:2.5rem;
+    bottom:2.5rem;
+}
+.social-container i{
+    font-size:1.25rem;
+    margin-right:0.25rem;
+    color:white;
+}
+.text-container p:nth-child(1){
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin:1rem 2.5rem;
+}
+/* .pinContainer */
+#pinContainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top:0;
+    left:0;
+}
+
+#bg-wrapper{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+.about h1
+{   
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 9vw;
+    z-index: 0;
+    opacity: 0.3;
+    position: relative;
+}
+.form-wrapper{
+    background-color: #5e3a1a;
+    width: 70%;
+    margin:auto;
+    overflow: hidden;
+    border-radius:20px;
+    padding:3%;
+    transform: translateY(-2%);
+}
+
+.letter{
+    background-color: #9c632d;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+label{
+    font-size:1.3rem;
+}
+.letter h1{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 9vw;
+    z-index: 0;
+    opacity: 0.3;
+    position: relative;
+
+}
+.letter input[type=text], input[type=email], textarea{
+    width: 60%;
+    padding: 2vh;
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: none;
+    resize: vertical;
+ 
+}
+textarea{
+    font-family: "product_sansregular";
+}
+.letter input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+.letter input[type=submit]:hover {
+background-color: #45a049;
+}
+  
+  
+.terminal{
+    background-color: #040404;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    
+}
+.terminal svg{
+    width: auto;
+    position: absolute; 
+    height: 80vh;
+    display: block;
+    margin:auto;
+    padding:auto;
+    left:0;
+    top:0;
+    opacity: 1;
+    overflow: hidden;
+}
+.svg-terminal-wrapper{
+    width:1400px;
+    position:relative;
+    left:50%;
+    margin-left:-700px;
+}
+svg #longtext{
+    animation-duration: 3.5s;
+    animation-name: animateText;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #textbottom{
+    animation-duration: 1.2s;
+    animation-name: animateText;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.info{
+    width: 80%;
+    height:80%;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    /* box-shadow: 0 0 1.2rem rgba(255, 255, 255, 0.55); */
+    
+    opacity: 1;
+    z-index: 1;
+    left:2vw;
+    top:-3vw;  
+    position: relative;
+}
+
+.info h3{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.info #about-text{
+    font-size:1.2rem;
+    color:black;
+    display: block;
+    text-align: left;
+
+}
+
+#about-text{
+    margin-left:2%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding:10px;   
+}
+
+.about-me-info p{
+    margin-top: 10px;
+    text-align: left;
+}
+.about-me-info #profile-pic{
+    padding: 0 10px 10px 0px;
+    display: block;
+    width: 70%;
+    margin: 15px 15px 15px 15px;
+    height: auto;
+    
+}
+
+
+
+/* i am.... text-animation */
 .text-animation{
-  font-size: 1.5em;
-  margin:10px;
+    font-size: 1.5em;
+    
 }
 .next::before{
     content: '';
@@ -89,70 +441,82 @@ h1{
     animation-iteration-count: infinite;
 }
 .cursor::before{
-  content: '';
-  font-size: 100%;
-  animation-name: cursor;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+    content: '';
+    font-size: 100%;
+    animation-name: cursor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
+  
+  @keyframes textani {
+    0% {opacity:1;content: "a d"}
+    2% {opacity:1;content: "a de"}
+    4% { opacity:1;content: "a dev"}
+    6% {opacity:1;content: "a deve"}
+    8% {opacity:1;content: "a devel"}
+    10% {opacity:1;content: "a develo"}
+    12% {opacity:1; content: "a develop"}
+    14% {opacity:1; content: "a develope"}
+    16% {opacity:1; content: "a developer"}
+    20% {opacity:1; content: "a developer"}
+    26% {opacity:1; content: "an "}
+    28% {opacity:1; content: "an a"}
+    30% {opacity:1; content: "an ar"}
+    32% {opacity:1; content: "an art"}
+    34% {opacity:1; content: "an arti"}
+    36% {opacity:1; content: "an artis"}
+    38% {opacity:1; content: "an artist"}
+    42% {opacity:1; content: "an artist"}
+    48% {opacity:1; content: "a "}
+    50% {opacity:1; content: "a p"}
+    51% {opacity:1; content: "a pr"}
+    52% {opacity:1; content: "a pro"}
+    53% {opacity:1; content: "a prob"}
+    54% {opacity:1; content: "a probl"}
+    55% {opacity:1; content: "a proble"}
+    56% {opacity:1; content: "a problem"}
+    57% {opacity:1; content: "a problem "}
+    58% {opacity:1; content: "a problem s"}
+    59% {opacity:1; content: "a problem so"}
+    60% {opacity:1; content: "a problem sol"}
+    61% {opacity:1; content: "a problem solv"}
+    62% {opacity:1; content: "a problem solve"}
+    63% {opacity:1; content: "a problem solver"}
+    73% {opacity:1; content: "a "}
+    100% {opacity:1; content:"a "}
+  }
 
-@keyframes textani {
-  0% {opacity:1;content: "I'm a d"}
-  2% {opacity:1;content: "I'm a de"}
-  4% { opacity:1;content: "I'm a dev"}
-  6% {opacity:1;content: "I'm a deve"}
-  8% {opacity:1;content: "I'm a devel"}
-  10% {opacity:1;content: "I'm a develo"}
-  12% {opacity:1; content: "I'm a develop"}
-  14% {opacity:1; content: "I'm a develope"}
-  16% {opacity:1; content: "I'm a developer"}
-  20% {opacity:1; content: "I'm a developer"}
-  26% {opacity:1; content: "I'm an "}
-  28% {opacity:1; content: "I'm an a"}
-  30% {opacity:1; content: "I'm an ar"}
-  32% {opacity:1; content: "I'm an art"}
-  34% {opacity:1; content: "I'm an arti"}
-  36% {opacity:1; content: "I'm an artis"}
-  38% {opacity:1; content: "I'm an artist"}
-  42% {opacity:1; content: "I'm an artist"}
-  48% {opacity:1; content: "I'm a "}
-  50% {opacity:1; content:"I'm a p"}
-  51% {opacity:1; content:"I'm a pr"}
-  52% {opacity:1; content:"I'm a pro"}
-  53% {opacity:1; content:"I'm a prob"}
-  54% {opacity:1; content:"I'm a probl"}
-  55% {opacity:1; content:"I'm a proble"}
-  56% {opacity:1; content:"I'm a problem"}
-  57% {opacity:1; content:"I'm a problem "}
-  58% {opacity:1; content:"I'm a problem s"}
-  59% {opacity:1; content:"I'm a problem so"}
-  60% {opacity:1; content:"I'm a problem sol"}
-  61% {opacity:1; content:"I'm a problem solv"}
-  62% {opacity:1; content:"I'm a problem solve"}
-  63% {opacity:1; content:"I'm a problem solver"}
-  73% {opacity:1; content:"I'm a "}
-  100% {opacity:1; content:"I'm a "}
-}
+  @keyframes cursor{
+    0%{opacity:1; content:"|"}
+    50%{opacity:0; content:"|"}
+  } 
 
-@keyframes cursor{
-  0%{opacity:1; content:"|"}
-  50%{opacity:0; content:"|"}
-} 
-
-#overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(241, 14, 241, 0.959); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
-
-#term{
-  display: inline;
-}
+  @media(min-width: 760px){
+      .hero-text ul li{
+          visibility: visible;
+      }
+      .name-container{
+        width:65%;
+        height:26%;
+        
+      }
+      .about-me-info #profile-pic{
+        max-width: 25%;
+        float: left;
+        
+    }
+    .about-me-info{
+        margin-left: 5%;
+    }
+    .about-me-info #profile-pic{
+        margin-left: 5%;
+    }
+    .about-me-info p{
+        padding: 2%;
+        font-size:1.2rem;
+        color:black;
+        margin-left: 50px;
+    
+    }
+      
+  }

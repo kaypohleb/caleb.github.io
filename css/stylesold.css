@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+.navitem{
+  display: inline;
+  
+}
+.navitemtext{
+  color:white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 12px;
+}
+.navitemtext:hover{
+  color:red
+}
+#navbar{
+  float: right;
+  list-style-type: none;
+  margin: 20px;
+  padding: 12px;
+}
+body{
+  
+  font-family: 'Lato', sans-serif; 
+  background: #203A43;
+  color:white;
+}
+img {
+  
+  -webkit-filter: drop-shadow(10px 10px 5px #222);
+  filter: drop-shadow(10px 10px 5px #222);
+}
+.sub-title{
+  font-size: 1.2em;
+  margin:10px;
+  
+}
+#central-text{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+h1{
+  font-size: 3em;
+  margin:10px;
+  color: white;
+}
+#profile{
+  padding:10px;
+  height:50vh;
+  position: relative;
+
+}
+.button{
+  margin: 10px;  
+  border-radius: 5%;
+  border: 2px solid white; 
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  box-shadow: 0 9px #2C5364;
+}
+.button:active {
+  background-color: #db3434;
+  box-shadow: 0 5px #2C5364;
+  transform: translateY(4px);
+}
+.button:hover {
+  background-color: #db3434;
+  color: white;
+}
+.text-animation{
+  font-size: 1.5em;
+  margin:10px;
+}
+.next::before{
+    content: '';
+    font-size: 100%;
+    animation-name: textani;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.cursor::before{
+  content: '';
+  font-size: 100%;
+  animation-name: cursor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textani {
+  0% {opacity:1;content: "I'm a d"}
+  2% {opacity:1;content: "I'm a de"}
+  4% { opacity:1;content: "I'm a dev"}
+  6% {opacity:1;content: "I'm a deve"}
+  8% {opacity:1;content: "I'm a devel"}
+  10% {opacity:1;content: "I'm a develo"}
+  12% {opacity:1; content: "I'm a develop"}
+  14% {opacity:1; content: "I'm a develope"}
+  16% {opacity:1; content: "I'm a developer"}
+  20% {opacity:1; content: "I'm a developer"}
+  26% {opacity:1; content: "I'm an "}
+  28% {opacity:1; content: "I'm an a"}
+  30% {opacity:1; content: "I'm an ar"}
+  32% {opacity:1; content: "I'm an art"}
+  34% {opacity:1; content: "I'm an arti"}
+  36% {opacity:1; content: "I'm an artis"}
+  38% {opacity:1; content: "I'm an artist"}
+  42% {opacity:1; content: "I'm an artist"}
+  48% {opacity:1; content: "I'm a "}
+  50% {opacity:1; content:"I'm a p"}
+  51% {opacity:1; content:"I'm a pr"}
+  52% {opacity:1; content:"I'm a pro"}
+  53% {opacity:1; content:"I'm a prob"}
+  54% {opacity:1; content:"I'm a probl"}
+  55% {opacity:1; content:"I'm a proble"}
+  56% {opacity:1; content:"I'm a problem"}
+  57% {opacity:1; content:"I'm a problem "}
+  58% {opacity:1; content:"I'm a problem s"}
+  59% {opacity:1; content:"I'm a problem so"}
+  60% {opacity:1; content:"I'm a problem sol"}
+  61% {opacity:1; content:"I'm a problem solv"}
+  62% {opacity:1; content:"I'm a problem solve"}
+  63% {opacity:1; content:"I'm a problem solver"}
+  73% {opacity:1; content:"I'm a "}
+  100% {opacity:1; content:"I'm a "}
+}
+
+@keyframes cursor{
+  0%{opacity:1; content:"|"}
+  50%{opacity:0; content:"|"}
+} 
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(241, 14, 241, 0.959); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#term{
+  display: inline;
+}

@@ -69,12 +69,40 @@ svg #signature{
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-@keyframes animateSig{
+svg #scroll{
+    animation-duration: 1.5s;
+    animation-name: animateScrollTop;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #scrolltop{
+    animation-duration: 1.5s;
+    animation-name: animateScrollTop;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+svg #scrollmed{
+    animation-duration: 1.5s;
+    animation-name: animateScrollMed;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animateScrollTop{
     from{
-        transform: rotate(0deg);
+        transform: translateX(0) translateY(0);
     }
     to{
-        transform: rotate(1deg);
+        transform: translateX(0) translateY(50px);
+    }
+}
+
+@keyframes animateScrollMed{
+    from{
+        transform: translateX(0) translateY(20px);
+    }
+    to{
+        transform: translateX(0) translateY(0px);
     }
 }
 
